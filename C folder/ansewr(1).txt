@@ -1,0 +1,63 @@
+Preston Quiz
+1
+struct Dog{
+	char name[100];
+	char breed[100];
+	char owner_name[100];
+	int age;
+};
+2
+struct Dog garm = {"Garm", "Hellhound", "Hel", 2000};
+3
+prints out john
+4
+E
+5
+struct Dog *guard_dog;
+guard_dog = &garm;
+6
+printf("%s\n", garm.owner_name);
+printf("%s\n", guard_dog->owner_name);
+7
+guard_dog->age+=1000;
+8
+B
+9
+set a limit on how long it will run
+10
+G
+11
+int i;
+for(i=9; i > 0; i-=2){
+	printf("%d\n", i);
+}
+12
+the memory address of number of kisses
+13
+8
+14
+a=5 b = 6
+15
+just becuase scanf modifies value at memory addrss and & gives memory address of the variable
+16
+allocates memory for a varaible
+17
+void print_haiku(sturct Haiku *haiku){
+	printf("&s\n%s\n%s\n", *haiku->line1,haiku->line2,haiku->line3,);
+}
+18
+struct Quaternion{
+	int rea;
+	int rebi;
+	int recj;
+	int redk;
+};
+19
+1
+1
+1
+1
+20
+yes
+21 Echidna
+22 Array

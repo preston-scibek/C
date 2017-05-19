@@ -1,0 +1,214 @@
+You may use each other's help. You may ask me for help (I will give limited responses). You may use 
+any resource you would like. It is highly encouraged for many of these 
+
+Note, many of the questions depend on one another.
+
+1. Give the definition for a struct that I could use to represent a 
+Dog. A Dog needs to have the following information:
+
+  * Its name
+  * Its breed
+  * Its owner's name
+  * Its age
+
+Select logical types. You may assume no dog breed's name, nor dog or owner's name, exceeds 100 characters (including
+the null terminator).
+
+2. Using the definition you provided above, declare and instantiate (that means create) a variable named
+garm, and garm should have the following information:
+
+  * garm's name is "Garm"
+  * garm's breed is "Hellhound"
+  * garm's owner's name is "Hel"
+  * garm's age is 2000
+
+3. Given the following:
+
+char title[] = {'j','o','h','n','\0','n','a','s','h'};
+printf("%s",title);
+ 
+What does the following print out?
+
+4. What is the type of the following variable:
+
+long long *foo;
+
+A. long long
+B. long
+C. long pointer
+D. long long pointer
+E. pointer long long
+F. Invalid type.
+
+5. Declare and instantiate a pointer to a Dog called guard_dog, and point it to the garm variable you made in 
+Question 2.
+
+6. * Print garm's owner's name by using the garm variable
+   * Print garm's owner's name without using the garm variable directly (but you may use what you made in Question 5)
+
+7. Increase garm's age by 1000, but without using the garm variable directly.
+
+8. What is the following code snippet at risk of? Assume the following:
+   * do_i_still_want_input() is a boolean function that is verified to be 
+     error free (that means calling it is not the problem). It is unknown
+     how long it will return true.
+   * use_input_buffer(char *buffer) is a function that is verified to be
+     error free.
+
+while (do_i_still_want_input()){
+  //Create the buffer of size 102.
+  char *buffer = (char *)malloc(sizeof(char)*(1024/10));
+  //Use the buffer
+  use_input_buffer(buffer);
+  //We no longer need the buffer.
+}
+     
+A. Divide by zero error
+B. Memory Leak
+C. Compiler error - incorrect argument type for use_input_buffer
+D. There are no bugs.
+
+9. If you answered A,B or C to 8, how can you prevent the potential bug?
+If you answered D, then guess what? You just got a free point here, as long as
+the correct answer to 8 is D.
+
+10. What is something arrays in C can't do?
+A. Store values
+B. Automatically sort given values
+C. Change in capacity
+D. A,B, and C
+E. A and B
+F. A and C
+G. B and C.
+
+11. Write a loop (any loop except for goto) that completes the following task:
+
+Print every odd number between 10 and 0, in descending order.
+
+12. What is the number printed in the following snippet, w.r.t. number_of_kisses:
+
+    int number_of_kisses = 5;
+    print("%d", &number_of_kisses);
+
+    I do not want an actual number. I want what the number means.
+
+13. Recall that ints have a size of 4 bytes, typically.
+
+Given an array of ints of size 100 called foo,
+what should be printed in the following snippet?
+
+  printf("%d", &foo[3]-&foo[1]);
+
+
+14. What will the following code snippet print
+
+void foo(int x, int y){
+  int temp = x;
+  temp = x;
+  x = y;
+  y = x;
+}
+int main(void){
+  int a = 5;
+  int b = 6;
+  foo(a,b);
+  printf("a=%d b=%d", a, b); 
+}
+
+15. Why does scanf require foo to have the & operator in the following example?
+
+int foo = 5;
+scanf("%d", &foo);
+
+Don't say "Just because."
+
+16. What does malloc do?
+
+17. Given the following struct
+
+struct Haiku{
+  char line1[100];
+  char line2[100];
+  char line3[100];
+}
+
+Writes a void function called print_haiku that takes a POINTER to a Haiku, and
+printes each line in the haiku, each on their own line.
+
+
+18. Recall the Complex program. There is a math object similar to complex numbers
+called Quaternions (pronounced "qwat - terr - knee - ins"). Quaternions
+are used for computing 3d rotations, especially in game programming.
+
+A quaternion is of the form:
+
+a + bi + cj + dk, where a,b,c, and d are real numbers.
+
+i, j, and k are special.
+
+Define a struct type for Quaternion. Use reasonable types. There should
+be four fields (i, j, and k do not have to be represented).
+
+
+19. Recall that % gives the remainder of dividing two numbers. Like
+
+6 % 2 == 0, but 7 % 3 == 1. 
+
+Given the following function:
+
+int mystery(int n){
+  if (n == 1) return 1;
+  if (n % 2 == 0) return mystery(n/2);
+  if (n % 1 == 1) return mystery(3*n + 1); 
+} 
+
+What is the result of calling
+ * mystery(1)
+ * mystery(4)
+ * mystery(5)
+ * mystery(10)
+
+(this is actually a super famous function)
+
+20. Given the following struct and variables
+
+struct Captain{
+  char *name;
+  char *tv_series;
+  char *ship;
+};
+
+struct Captain *picard = (struct Captain *)malloc(sizeof(struct Captain));
+
+Here are two code snippets:
+
+Snippet 1.
+
+(*picard).name = "Jean-Luc Picard";
+(*picard).tv_series = "Star Trek: The Next Generation";
+(*picard).ship_name = "USS Enterprise D";
+printf("%s", (*picard).name));
+
+
+Snippet 2.
+
+picard->name = "Jean-Luc Picard";
+picard->tv_series = "Star Trek: The Next Generation";
+picard->ship_name = "USS Enterprise D";
+printf("%s", picard->name);
+
+True or False: Snippet 1 and Snippet 2 are equivalent. If False, why?
+
+21. What egg-laying mammal shares the same name as a monster
+from Greek Mythology known for her maternal nature?
+Echidna
+
+22. A student writes on Mr. Littrell's board the following code snippet
+
+{"hip", "hip"}
+
+
+Everyone starts cheering. What about the code snippet makes them cheer?
+(If your answer doesn't involve a pun, you're wrong)
+Array
+

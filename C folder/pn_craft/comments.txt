@@ -1,0 +1,145 @@
+/*                    |                   |
+					  |                   | 
+					  |                   |
+					  |                   | 
+   					  |                   |
+					  |                   | 
+                      |                   |
+					  |                   | 
+                      |                   |
+					  |                   | 
+		      --------                    --------
+              \                                  / 
+			   \                                /
+			    \      ( 0  )    (  0  )       /
+			     \                            / 
+			      \                          /
+				   \     \          /       /
+				    \     \        /       /
+					 \     \______/       /
+					  \                  /
+					   \                /
+					    \              /
+						 \            /
+						  \          /
+						   \        /
+						    \      /
+					         \    /
+							  \  /
+							   \/
+
+
+
+//                    2. DEFINE ALL ITEMS
+*/
+/*// 3. DEFINE ALL FUNCTIONS
+// 4. FINISH FUNCTIONS
+// 5. FIGURE OUT HOW TO IMPLEMENT FUNCTIONS
+// 5. a) ROUGH COPY OF HOUSE EDIT
+// 5. a) (i) FINISH HOUSE EDIT
+// 5. b) FINISH GO MINING
+// 5. c) ROUGH COPY OF MOB SPAWNING
+// 5. c) FINISH MOB SPAWNING
+// 5. d) ROUGH COPY OF CRAFTING/UPDATING INVENTORY
+// 5. d) (i) CRAFTING + DELETE OLD ADD NEW?!?!?!
+// 5. d) (ii) IMPLEMENT UPDATING AT MINING, BUILDING, MOB EVENTS
+// 5. e) ROUGH COPY MOB EVENTS
+// 5. e) (i) FINISH MOB EVENTS
+// 8. ADD USEFUL COMMENTS EXPLAINING HOW THE CODE WORKS
+// 9. FIGURE OUT WHAT BLOCKS WILL BE INCLUDED
+// 9. a) FIGURE OUT WHAT WILL BE REPRESENTED BY ASCII SYMBOLS
+*/
+/*                    |                   |
+					  |                   | 
+					  |                   |
+					  |                   | 
+   					  |                   |
+					  |                   | 
+                      |                   |
+					  |                   | 
+                      |                   |
+					  |                   | 
+		      --------                    --------
+              \                                  / 
+			   \                                /
+			    \                              /
+			     \                            / 
+			      \                          /
+				   \                        /
+				    \                      /
+					 \                    /
+					  \                  /
+					   \                /
+					    \              /
+						 \            /
+						  \          /
+						   \        /
+						    \      /
+					         \    /
+							  \  /
+							   \/
+// 10-20. REMIND NICK TO STAY ON TASK AND TO LOOK LIKE HE IS DOING SOMETHING
+*/
+// 21. TAKE ANDROID JAVA DRAGON BATTLE CODE AND USE FOR MOB BATTLE CODE HERE
+/*
+list of items:   --means crafting recipe done
+1 is wood 
+2 is stone
+3 is dirt
+4 is wood planks--
+5 is sticks--
+6 is crafting bench--   
+7 is chest   --
+8 is wood pickaxe--   
+9 is wood shovel   --
+10 is wood axe   --
+11 is wood sword   --
+12 is stone pickaxe--
+13 is stone shovel--   
+14 is stone axe--
+15 is stone sword--
+16 is iron ore
+17 is iron ingot--
+18 is furnace--
+19 is iron pickaxe--
+20 is iron shovel--
+21 is iron axe--
+22 is iron sword--
+23 is diamond pickaxe--
+24 is diamond shovel--
+25 is diamond axe--
+26 is diamond sword--
+27 is diamonds
+28 is wool--
+29 is coal
+30 is bed--
+31 is apple
+32 is raw steak
+33 is steak--
+34 is raw chicken
+35 is chicken--
+36 is bucket--
+37 is obsidian
+38 is sand
+39 is raw fish
+40 is cooked fish--
+41 is water bucket
+42 is lava bucket
+43 is lava fish
+44 is netherrack
+45 is fishing rod--   
+46 is string--
+47 is torch--
+*/
+
+go_mining(){
+		// goes mining
+		// shows facing view of stuff to mine
+		// has certain hp on pickaxe 
+		// stuff goes into invenotry when mine
+		// random chance of lava/water/mobs
+		// mobs chance influenced by torch placement
+		// when leave have to wait while walk past where entered 
+		// leaving through dark areas means chance of mobs spawning
+		// after done mining pulls of map of where to go
+}

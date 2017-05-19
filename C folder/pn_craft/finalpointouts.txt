@@ -1,0 +1,7 @@
+6: FILE I/O Line 2808 Starts function save game which outputs information to a file
+line 2829 starts function load game which loads the information from a file to the game
+5: Pointers are used in lines 1824, 1891, 1958, 2050, 21116, 2183, 2238, 2289, 2342, 2371, 2416, 2445, 2505 as parameters in functions that modify the number of total objects/animals in an area
+4 Loops: Are everywhere, important ones include the almost infinite loop starting on line 2853 which keeps the game running unless user chooses to quit, another notable loop is on line 150 which runs through all the items in the inventory and prints it out
+3 Functions: are everywhere... line 1426 begins the go_mining function which mines objects, line 2849 has the begining of the choices function which contains the almost infinite loop running the game
+2 strings are seen on line 2914 in the welcome function, which compares user input to the string start to see if people are ready to start
+1 arrays are used in line 8 when the inventory is created inside Struct steve the invenotry is stored in an array that is 2d 
